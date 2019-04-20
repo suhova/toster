@@ -22,7 +22,6 @@ public class FirtsPromis {
         int countMusic;
 
 
-
 //        driver.findElement(By.xpath(".//*[@class='track_cnt']")).click();
 //        driver.findElement(By.xpath(".//*[@class='modal_buttons_yes form-actions_yes button-pro']")).click();
         driver.findElement(By.xpath(".//*[contains(text(),'Подарить за ')]")).click();

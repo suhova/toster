@@ -23,7 +23,6 @@ public class Test3 extends TestBase {
     private  By firstPresent = By.xpath(".//*[@class='ugrid_i soh-s posR floatLeft']");
 
 
-
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
