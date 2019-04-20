@@ -1,4 +1,4 @@
-package tests;
+package toster.tests;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

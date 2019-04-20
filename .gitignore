@@ -1,0 +1,11 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/.name
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/mavenProjectSettings.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/workspace.xml
+target/
+testID.iml
+
