@@ -27,8 +27,8 @@ public class Test3 extends TestBase {
     public void setUp() throws Exception {
         driver = new ChromeDriver();
         baseUrl = "https://ok.ru/";
-        login = "+79110089701";
-        password = "mrdodocom0660";
+        login = "логин";
+        password = "пароль";
         text1="Я тостер";
         text2="Я сосистер";
 
