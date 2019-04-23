@@ -1,6 +1,5 @@
 package toster.pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -13,10 +12,6 @@ public class FirtsPromis {
     private final static Logger LOGGER = Logger.getLogger(FirtsPromis.class.getName());
     private boolean haveMoney = false;
     WebDriver driver;
-//    private final By BALACNCE = By.xpath("//*[@class='send-present_header-balance __with-margin']//span[@data-name='ok-balance']");
-//    private WebDriver driver;
-//    private String text1="БОГАТЫЙ СОСИСТЕР";
-//    private String text2="НИЩИЙ ТОСТЕР";
     private String baseUrl = "https://ok.ru/";
 
     public FirtsPromis(WebDriver driver) {

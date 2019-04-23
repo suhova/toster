@@ -1,12 +1,8 @@
 package toster;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import toster.pages.*;
 import toster.tests.TestBase;
@@ -29,8 +25,6 @@ public class Test3 extends TestBase {
         baseUrl = "https://ok.ru/";
         login = "логин";
         password = "пароль";
-        text1="Я тостер";
-        text2="Я сосистер";
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
@@ -53,22 +47,12 @@ public class Test3 extends TestBase {
 //        Assert.assertNotEquals(text1, driver.findElement(By.xpath("//*[@class='gifts-column-grid_col js-gcg-first-col']//*[@class='gift-card_msg_cnt']")).getText());
 //
 //
-//
 //        driver.get(baseUrl + "/gifts/sent");
 //        Assert.assertEquals(text2, driver.findElement(By.xpath("//*[@class='gifts-column-grid_col js-gcg-first-col']//*[@class='gift-card_msg_cnt']")).getText());
 
 
         FirtsPromis firtsPromis = new FirtsPromis(driver);
         firtsPromis.sendPresents();
-
-//        UserMainPage userMainPage = new UserMainPage(driver);
-//        userMainPage.openFriendsPage();
-//
-//        FriendsPage friendsPage = new FriendsPage(driver);
-//
-//        List<CardWrapper> friends = friendsPage.getFriends();
-//        friendsPage.friendByName(friendName, friends).writeMassage();
-//        assertEquals(driver.findElement(By.xpath("//*[@class='chat_name_wr']//*[@title]")).getText(), driver.findElement(By.xpath("//*[@class='chats_i h-mod __active']//*[@class='chats_i_h ellip']")).getText());
     }
 
     @After

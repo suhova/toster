@@ -31,13 +31,6 @@ public class PresentPage extends BasePage{
         this.driver = driver;
         check(driver);
     }
-//    public void makePresent() {
-//        if(isElementPresent(By.xpath(".//a[text()='Сделать подарок']"),driver)) {
-//            driver.findElement(FRAME).findElement(By.xpath(".//a[text()='Сделать подарок']")).click();
-//        } else {
-//            throw new UnsupportedOperationException();
-//        }
-//    }
 
     public void choosePresent() {
         if(isElementPresent(FIRST_PRESET,driver)) {
