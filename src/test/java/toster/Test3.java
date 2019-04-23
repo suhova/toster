@@ -1,9 +1,12 @@
 package toster;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import toster.pages.*;
 import toster.tests.TestBase;
@@ -15,21 +18,19 @@ public class Test3 extends TestBase {
     private String baseUrl;
     private String login;
     private String password;
-    private String friendName;
+    private String text1;
+    private String text2;
     private StringBuffer verificationErrors = new StringBuffer();
-
-    private By frame = By.xpath(".//div[@class='main-content-header_data mctc-top']");
-    private  By СДЕЛАТЬ_ПОДАРОК = By.xpath(".//a[text()='Сделать подарок']");
-    private  By firstPresent = By.xpath(".//*[@class='ugrid_i soh-s posR floatLeft']");
 
 
     @Before
     public void setUp() throws Exception {
         driver = new ChromeDriver();
         baseUrl = "https://ok.ru/";
-        login = "тут был мой логин";
-        password = "тут был мой пароль";
-        friendName="Станислв Мильке";
+        login = "+79110089701";
+        password = "mrdodocom0660";
+        text1="Я тостер";
+        text2="Я сосистер";
 
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
@@ -44,9 +45,18 @@ public class Test3 extends TestBase {
         loginPage.passwordEnter(password);
         loginPage.clickEnter();
 
-        driver.get(baseUrl + "/stasmilke");
-        driver.findElement(frame).findElement(СДЕЛАТЬ_ПОДАРОК).click();
-        driver.findElement(firstPresent).click();
+
+//        driver.findElement(By.id("present-text")).sendKeys(text1);
+//        driver.get(baseUrl + "/gifts/sent");
+//
+//
+//        Assert.assertNotEquals(text1, driver.findElement(By.xpath("//*[@class='gifts-column-grid_col js-gcg-first-col']//*[@class='gift-card_msg_cnt']")).getText());
+//
+//
+//
+//        driver.get(baseUrl + "/gifts/sent");
+//        Assert.assertEquals(text2, driver.findElement(By.xpath("//*[@class='gifts-column-grid_col js-gcg-first-col']//*[@class='gift-card_msg_cnt']")).getText());
+
 
         FirtsPromis firtsPromis = new FirtsPromis(driver);
         firtsPromis.sendPresents();
