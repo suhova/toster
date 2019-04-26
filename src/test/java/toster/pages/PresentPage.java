@@ -33,6 +33,7 @@ public class PresentPage extends BasePage{
     }
 
     public void choosePresent() {
+        //Тут будет ассерт
         if(isElementPresent(FIRST_PRESET,driver)) {
             driver.findElement(FIRST_PRESET).click();
         } else {
@@ -41,6 +42,7 @@ public class PresentPage extends BasePage{
     }
 
     public void sendPresent(){
+        //Тут будет ассерт
         if(isElementPresent(SEND,driver)) {
             driver.findElement(SEND).click();
         } else {
@@ -49,6 +51,7 @@ public class PresentPage extends BasePage{
     }
 
     public void addMusic(){
+        //Тут будет ассерт
         if(isElementPresent(By.id("selectMusicTrackLink"),driver)) {
             driver.findElement(By.id("selectMusicTrackLink")).click();
             driver.findElement(By.id("gt_123392913248561")).click();
@@ -58,6 +61,7 @@ public class PresentPage extends BasePage{
         }
     }
     public void deleteMusic(){
+        //Тут будет ассерт
         if(isElementPresent(By.id("removeMusicTrackLink"),driver)) {
             driver.findElement(By.id("removeMusicTrackLink")).click();
         } else {
@@ -66,6 +70,7 @@ public class PresentPage extends BasePage{
     }
 
     public void switchToPresentFrame(){
+        //Тут будет ассерт
         if(isElementPresent(FRAME_PRESENT,driver)) {
             driver.switchTo().defaultContent();
             driver.switchTo().frame(driver.findElement(FRAME_PRESENT));
