@@ -14,8 +14,6 @@ public class PresenrPromisTest extends TestBase {
     private String baseUrl;
     private String login;
     private String password;
-    private String text1;
-    private String text2;
     private StringBuffer verificationErrors = new StringBuffer();
 
 
